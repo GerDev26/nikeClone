@@ -1,0 +1,36 @@
+.gallery{
+    display: flex;
+    width: calc(100% - 40px);
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0px;
+    position: relative;
+    overflow: hidden;
+    margin: 0px 20px;
+}
+.gal-btn-container{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.gal-btn{
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &&:hover{
+        color: grey;
+        background-color: white;
+    }
+}
+.gal-btn-img{
+    width: 90%;
+}
