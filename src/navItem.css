@@ -13,7 +13,7 @@
     transition: all 250ms ease-in-out;
 }
 .nav-item-dropdown-open{
-    height: 200px;
+    height: fit-content;
     padding: 20px 0px;
     opacity: 1;
 }

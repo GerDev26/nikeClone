@@ -6,7 +6,6 @@ import {Navbar} from './navbar.jsx'
 import {Gallery} from './gallery.jsx'
 import {Vento} from './vento.jsx'
 import './main.css'
-import './animations.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
