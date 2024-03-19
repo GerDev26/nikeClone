@@ -1,0 +1,12 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dropdown-category{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.dropdown-item{
+    color: grey;
+}

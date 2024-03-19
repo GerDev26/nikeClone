@@ -1,7 +1,73 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css';
+import { NavItem } from './navItem.jsx';
+
+const multimedia = [
+    { 
+        id: 1, 
+        category: "peliculas", 
+        items: [
+            "terror",
+            "suspenso",
+            "accion"
+        ] 
+    },
+    { 
+        id: 2, 
+        category: "Series", 
+        items: [
+            "terror",
+            "suspenso",
+            "accion"
+        ] 
+    }
+];
+const calzado = [
+    { 
+        id: 1, 
+        category: "zapatillas", 
+        items: [
+            "Nike",
+            "Adidas",
+            "Jordan"
+        ] 
+    },
+    { 
+        id: 2, 
+        category: "Borcegos", 
+        items: [
+            "Oxido",
+            "Nitro",
+            "asdasdasd"
+        ] 
+    },
+    { 
+        id: 3, 
+        category: "zapatillas", 
+        items: [
+            "Nike",
+            "Adidas",
+            "Jordan"
+        ] 
+    },
+    { 
+        id: 4, 
+        category: "Borcegos", 
+        items: [
+            "Oxido",
+            "Nitro",
+            "asdasdasd"
+        ] 
+    }
+];
 
 export function Navbar() {
+
+    const [itemList, setItemList] = useState(false)
+
+    const toggleItemList = () => {
+        setItemList(!itemList)
+    }
 
     return (
         <nav className='nav'>
@@ -17,12 +83,8 @@ export function Navbar() {
                 <img className='nav-logo' src="https://cdn.worldvectorlogo.com/logos/nike-11.svg" alt="" />
 
                 <div className='nav-links font-medium'>
-                    <a href="">Destacados</a>
-                    <a href="">Hombre</a>
-                    <a href="">Mujer</a>
-                    <a href="">Niño/a</a>
-                    <a href="">Accesorios</a>
-                    <a href="">Oportunidades</a>
+                    <NavItem text="Multimedia" url="hola" className="nav-item" info={multimedia}></NavItem>
+                    <NavItem text="Calzado" url="hola" className="nav-item" info={calzado}></NavItem>
                 </div>
                 
                 <div className='nav-search-car'>
