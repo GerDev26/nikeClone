@@ -21,8 +21,8 @@ export function NavItem({ text, url, className, info}) {
         <>
             <a onMouseEnter={open} onMouseLeave={close} className={className} href={url}>{text}</a>
             <div onMouseEnter={open} onMouseLeave={close} className={openClose}>
-                {info.map(data => (
-                    <Dropdown category={data.category} items={data.items} isActive={dropdown}/>
+                {info.map((data, index) => (
+                    <Dropdown key={index} category={data.category} items={data.items} isActive={dropdown}/>
                 ))}
             </div>
         </>
