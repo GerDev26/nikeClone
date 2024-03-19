@@ -5,58 +5,35 @@ import { NavItem } from './navItem.jsx';
 const multimedia = [
     { 
         id: 1, 
-        category: "peliculas", 
-        items: [
-            "terror",
-            "suspenso",
-            "accion"
+
+        category: { name: "Peliculas", url: "peliculas"},
+
+        items:[
+            {name :"terror", url: "t"},
+            {name :"suspenso", url: "s"},
+            {name :"accion", url: "a"}
         ] 
     },
     { 
         id: 2, 
-        category: "Series", 
-        items: [
-            "terror",
-            "suspenso",
-            "accion"
-        ] 
-    }
-];
-const calzado = [
-    { 
-        id: 1, 
-        category: "zapatillas", 
-        items: [
-            "Nike",
-            "Adidas",
-            "Jordan"
-        ] 
-    },
-    { 
-        id: 2, 
-        category: "Borcegos", 
-        items: [
-            "Oxido",
-            "Nitro",
-            "asdasdasd"
+
+        category: { name: "Peliculas", url: "peliculas"},
+
+        items:[
+            {name :"terror", url: "t"},
+            {name :"suspenso", url: "s"},
+            {name :"accion", url: "a"}
         ] 
     },
     { 
         id: 3, 
-        category: "zapatillas", 
-        items: [
-            "Nike",
-            "Adidas",
-            "Jordan"
-        ] 
-    },
-    { 
-        id: 4, 
-        category: "Borcegos", 
-        items: [
-            "Oxido",
-            "Nitro",
-            "asdasdasd"
+
+        category: { name: "Peliculas", url: "peliculas"},
+
+        items:[
+            {name :"terror", url: "t"},
+            {name :"suspenso", url: "s"},
+            {name :"accion", url: "a"}
         ] 
     }
 ];
@@ -84,7 +61,8 @@ export function Navbar() {
 
                 <div className='nav-links font-medium'>
                     <NavItem text="Multimedia" url="hola" className="nav-item" info={multimedia}></NavItem>
-                    <NavItem text="Calzado" url="hola" className="nav-item" info={calzado}></NavItem>
+                    <NavItem text="Multimedia" url="hola" className="nav-item" info={multimedia}></NavItem>
+                    <NavItem text="Multimedia" url="hola" className="nav-item" info={multimedia}></NavItem>
                 </div>
                 
                 <div className='nav-search-car'>

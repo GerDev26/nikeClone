@@ -10,16 +10,19 @@ export function NavItem({ text, url, className, info}) {
     ? "nav-item-dropdown nav-item-dropdown-open"
     : "nav-item-dropdown"
 
-    const handleHover = () => {
-        setDropdown(!dropdown)
+    const open = () => {
+        setDropdown(true)
+    }
+    const close = () => {
+        setDropdown(false)
     }
 
     return (
         <>
-            <a onMouseEnter={handleHover} className={className} href={url}>{text}</a>
-            <div onMouseLeave={handleHover} className={openClose}>
+            <a onMouseEnter={open} onMouseLeave={close} className={className} href={url}>{text}</a>
+            <div onMouseEnter={open} onMouseLeave={close} className={openClose}>
                 {info.map(data => (
-                    <Dropdown category={data.category} items={data.items}/>
+                    <Dropdown category={data.category} items={data.items} isActive={dropdown}/>
                 ))}
             </div>
         </>

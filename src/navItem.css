@@ -1,5 +1,7 @@
 .nav-item-dropdown{
+    display: flex;
     justify-content: center;
+    opacity: 0;
     gap: 5%;
     position: absolute;
     top: 90px;
@@ -8,10 +10,10 @@
     width: 100%;
     height: 0px;
     overflow: hidden;
-    transition: height 150ms ease-in;
+    transition: all 250ms ease-in-out;
 }
 .nav-item-dropdown-open{
-    height: fit-content;
+    height: 200px;
     padding: 20px 0px;
-    display: flex;
+    opacity: 1;
 }

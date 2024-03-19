@@ -18,6 +18,9 @@ body{
 .font-title{
     font-size: 37px;
 }
+.hidden{
+    opacity: 0;
+}
 /* Normalizar todos los enlaces */
 a {
     color: inherit; /* Heredar el color del texto del elemento padre */
